@@ -16,3 +16,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/hello', function () {
     return view('hello', ['name' => "Hello World."]);
 });
+
+Route::get('/users/1', 'UserController@show');
